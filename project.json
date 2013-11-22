@@ -1,0 +1,95 @@
+{
+  "environment": {
+
+    "developer": {
+
+      "path": {
+
+        "app":  "app",
+
+        "assets": {
+          "css":      "app/assets/css",
+          "font":     "app/assets/font",
+          "img":      "app/assets/img",
+          "js":       "app/assets/js",
+          "sass":     "app/assets/sass",
+          "vendors":  "app/assets/vendor"
+        },
+
+        "templates":  "app/templates"
+
+      },
+
+      "modules": {
+
+        "clean": {
+
+          "general": [
+            ".tmp",
+            ".sass-cache"
+          ],
+
+          "dist": [
+            ".tmp",
+            ".sass-cache",
+            "dist"
+          ]
+
+        },
+
+        "compass": {
+          "css":        ".tmp/assets/css",
+          "importPath": []
+        },
+
+        "connect": {
+          "base":       [
+            "app",
+            ".tmp"
+          ],
+          "debug":      true,
+          "hostname":   "localhost",
+          "livereload": true,
+          "open":       true,
+          "port":       8000,
+          "protocol":   "http"
+
+        },
+
+        "copy": {
+          "assets": ".tmp/assets/"
+        },
+
+        "uglify": {
+          "js": ".tmp/assets/js/",
+
+          "dev": {
+
+            "files":{
+
+              ".tmp/assets/js/min.js" :[
+                "app/assets/js/source/scripts.js"
+              ]
+
+            }
+
+          },
+
+          "vendors": {
+
+            "files":{
+
+              ".tmp/assets/js/vendors.js" : []
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+}

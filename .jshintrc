@@ -1,0 +1,23 @@
+{
+  "curly":      true,
+  "es3":        true,
+  "eqeqeq":     true,
+  "eqnull":     false,
+  "evil":       true,
+  "forin":      true,
+  "iterator":   false,
+  "sub":        false,
+  "strict":     true,
+  "undef":      true,
+  "unused":     true,
+  "globals": {
+    "alert":          true,
+    "console":        true,
+    "define":         true,
+    "document":       true,
+    "module":         true,
+    "navigator":      true,
+    "require":        true,
+    "window":         true
+  }
+}
